@@ -3,7 +3,9 @@ import 'package:frasedeldia/ui/shared/comun.dart' as comun;
 
 class ButtonLogin extends StatelessWidget {
   Function? onPressed;
+  String texto = '';
   ButtonLogin({
+    this.texto = '',
     @required this.onPressed
   });
 
@@ -17,7 +19,7 @@ class ButtonLogin extends StatelessWidget {
           onPressed: (){
             this.onPressed!();
           },
-          child: Text('Iniciar Sesión'),
+          child: Text(this.texto),
           // Container(
           //   padding: EdgeInsets.symmetric(horizontal: 40, vertical: 5),
           //   child: Text('Ingresar'),

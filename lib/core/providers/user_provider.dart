@@ -8,18 +8,15 @@ class UserProvider extends ChangeNotifier {
     this.password = '',
   });
 
-  // get email {
-  //   return this._email;
-  // }
-
-  // set email(String nombre) {
-  //   this._email = nombre;
-  //   notifyListeners();
-  // }
-
   void signIn(String email, String password) {
+    
     this.email = email;
     this.password = password;
     notifyListeners();
+  }
+
+  bool login(){
+
+    return true;
   }
 }
